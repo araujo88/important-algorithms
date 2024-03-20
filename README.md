@@ -47,3 +47,19 @@ A list of important algorithms to study
 - RSA Algorithm
 - Bloom Filters
 - Fast Fourier Transform
+- Gauss-Jordan / Gaussian Elimination
+- Randomized Algorithms (e.g., Monte Carlo, Las Vegas)
+- Viterbi Algorithm
+- PageRank
+- Lempel-Ziv-Welch (LZW) Compression
+- Simulated Annealing
+- Backtracking
+- N-Queens Problem Solutions
+- Miller-Rabin Primality Test
+- Linear Programming (Simplex Algorithm)
+- Minimax with Alpha-Beta Pruning
+- Cocke-Younger-Kasami (CYK) Algorithm
+- Expectation-Maximization (EM) Algorithm
+- Apriori Algorithm
+- Gradient Descent and Its Variants (e.g., Stochastic Gradient Descent, Adam)
+- Collaborative Filtering Algorithms
