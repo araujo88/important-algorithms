@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cassert>
 
 #define LENGTH(array) (sizeof(array) / sizeof(*(array)))
 
@@ -24,8 +24,8 @@ int main(void)
 {
     int array[] = {2, 3, 4, 8, 10, 15, 18};
 
-    std::cout << binary_search(array, LENGTH(array), 8) << std::endl;
-    std::cout << binary_search(array, LENGTH(array), 42) << std::endl;
+    assert((binary_search(array, LENGTH(array), 8)) == true);
+    assert((binary_search(array, LENGTH(array), 42)) == false);
 
     return 0;
 }
