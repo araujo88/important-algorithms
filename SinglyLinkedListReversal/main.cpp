@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 template <typename T>
 struct Node
@@ -70,23 +71,19 @@ public:
 
 int main()
 {
-    Node<int> *node1 = new Node<int>(1);
-    Node<int> *node2 = new Node<int>(2);
-    Node<int> *node3 = new Node<int>(3);
+    auto node1 = std::make_unique<Node<int>>(1);
+    auto node2 = std::make_unique<Node<int>>(2);
+    auto node3 = std::make_unique<Node<int>>(3);
 
-    SinglyLinkedList<int> linked_list = SinglyLinkedList<int>();
+    auto linked_list = SinglyLinkedList<int>();
 
-    linked_list.addNode(node1);
-    linked_list.addNode(node2);
-    linked_list.addNode(node3);
+    linked_list.addNode(node1.get());
+    linked_list.addNode(node2.get());
+    linked_list.addNode(node3.get());
 
     linked_list.printList();
     linked_list.reverse();
     linked_list.printList();
-
-    delete node1;
-    delete node2;
-    delete node3;
 
     return 0;
 }
