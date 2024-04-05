@@ -63,3 +63,8 @@ A list of important algorithms to study
 - Apriori Algorithm
 - Gradient Descent and Its Variants (e.g., Stochastic Gradient Descent, Adam)
 - Collaborative Filtering Algorithms
+- Tarjan's Algorithm
+- Edmonds-Karp Algorithm
+- Z Algorithm
+- Manacher's Algorithm
+- Prefix Tree
